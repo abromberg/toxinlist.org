@@ -65,12 +65,118 @@
         a:hover {
             background-color: oklch(0.92 0.2187 101.65);
         }
+
+        /* Reset and simplify the form layout */
+        .zf-templateWrapper {
+            border: none !important;
+            box-shadow: none !important;
+            background: transparent !important;
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            gap: 0.5rem !important;
+            width: 100% !important;
+            max-width: 500px !important;
+            margin: 0 auto !important;
+        }
+
+        /* Hide unnecessary elements */
+        .zf-tempHeadBdr, .zf-clearBoth, .zf-frmDesc {
+            display: none !important;
+        }
+
+        /* Style the input container */
+        .zf-subContWrap {
+            flex: 1 !important;
+            min-width: 0 !important; /* Prevent flex item from overflowing */
+        }
+
+        .zf-tempContDiv {
+            width: 100% !important;
+        }
+
+        .zf-tempContDiv input[type="text"] {
+            font-family: 'IBMPlexMono', monospace !important;
+            border: 1px solid #ddd !important;
+            padding: 12px !important;
+            border-radius: 4px !important;
+            width: 100% !important;
+            font-size: 14px !important;
+            transition: border-color 0.2s ease;
+            box-sizing: border-box !important;
+        }
+
+        /* Style the submit button container */
+        .zf-fmFooter {
+            flex-shrink: 0 !important;
+            margin-left: 0.5rem !important;
+        }
+
+        /* Style the submit button */
+        .zf-submitColor {
+            font-family: 'IBMPlexMono', monospace !important;
+            background: transparent !important;
+            border: 1px solid #ddd !important;
+            padding: 12px 24px !important;
+            border-radius: 4px !important;
+            font-size: 14px !important;
+            cursor: pointer !important;
+            transition: all 0.2s ease !important;
+            color: #444 !important;
+            white-space: nowrap !important;
+            display: block !important;
+        }
+
+        .zf-submitColor:hover {
+            background-color: oklch(0.92 0.2187 101.65) !important;
+        }
+
+        /* Remove all list styles */
+        .zf-templateWrapper ul {
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        /* Error message styling */
+        .zf-errorMessage {
+            font-family: 'IBMPlexMono', monospace !important;
+            font-size: 12px !important;
+            position: absolute !important;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>ToxinList is coming soon.</h1>
-        <p class="contact">Contact the team at <a href="mailto:info@toxinlist.org">info@toxinlist.org</a></p>
+        <p class="contact">Contact the team at <a href="mailto:info@toxinlist.org">info@toxinlist.org</a>, or sign up for updates below.</p>
+
+
+        <body class="zf-backgroundBg"><!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
+            <div class="zf-templateWidth"><form action='https://forms.zohopublic.com/healthyhomehero1/form/ToxinList/formperma/h9J6RsTVOiKQ-pFZqvIwf7b8aNpu3fWWnyGHVH43Q_E/htmlRecords/submit' name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data' id='form'><input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+            <input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+            <input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+            <div class="zf-templateWrapper"><!---------template Header Starts Here---------->
+            <ul class="zf-tempHeadBdr"><li class="zf-tempHeadContBdr"><h2 class="zf-frmTitle"><em>Sign up for updates on our launch</em></h2>
+            <p class="zf-frmDesc"></p>
+            <div class="zf-clearBoth"></div></li></ul><!---------template Header Ends Here---------->
+            <!---------template Container Starts Here---------->
+            <div class="zf-subContWrap zf-topAlign"><ul>
+            <!---------Email Starts Here---------->  
+            <li class="zf-tempFrmWrapper zf-large"><label class="zf-labelName"> 
+            </label>
+            <div class="zf-tempContDiv">
+            <span> <input fieldType=9  type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder="marie@curiemail.com"/></span> <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+            </div><div class="zf-clearBoth"></div></li><!---------Email Ends Here---------->  
+            </ul></div><!---------template Container Starts Here---------->
+            <ul><li class="zf-fmFooter"><button class="zf-submitColor" >Submit</button></li></ul></div><!-- 'zf-templateWrapper' ends --></form></div><!-- 'zf-templateWidth' ends -->
+            <script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+            var zf_MonthYearRegex = new RegExp("^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+            var zf_MandArray = [ "Email"]; 
+            var zf_FieldArray = [ "Email"]; 
+            var isSalesIQIntegrationEnabled = false;
+            var salesIQFieldsArray = [];</script></body>
+        
     </div>
 </body>
 </html>
